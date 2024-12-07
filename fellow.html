@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div id="digital-clock"></div> 
+        <div class="links"> 
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+
+    <div id="about" class="section-container">
+        <h2>Fellow Friends</h2>
+
+        <!-- Gallery Section -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="fellow1.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow2.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow3.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow4.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow5.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow6.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow7.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow8.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow9.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow10.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow11.jpg" alt="Fellow Friends">
+            </div>
+            <div class="gallery-item">
+                <img src="fellow12.jpg" alt="Fellow Friends">
+            </div>
+	    <div class="gallery-item">
+                <img src="fellow13.jpg" alt="Fellow Friends">
+            </div>
+	    <div class="gallery-item">
+                <img src="fellow14.jpg" alt="Fellow Friends">
+            </div>
+	    <div class="gallery-item">
+                <img src="fellow15.jpg" alt="Fellow Friends">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateDigitalClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('digital-clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateDigitalClock, 1000);
+        updateDigitalClock();
+    </script>
+
+</body>
+</html>

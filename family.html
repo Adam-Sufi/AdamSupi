@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div id="digital-clock"></div> 
+        <div class="links"> 
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+
+    <div id="about" class="section-container">
+        <h2>Family</h2>
+
+        <!-- Gallery Section -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="family1.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family2.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family3.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family4.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family5.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family6.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family7.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family8.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family9.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family10.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family11.jpg" alt="Family">
+            </div>
+            <div class="gallery-item">
+                <img src="family12.jpg" alt="Family">
+            </div>
+	    <div class="gallery-item">
+                <img src="family13.jpg" alt="Family">
+            </div>
+	    <div class="gallery-item">
+                <img src="family14.jpg" alt="Family">
+            </div>
+	    <div class="gallery-item">
+                <img src="family15.jpg" alt="Family">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateDigitalClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('digital-clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateDigitalClock, 1000);
+        updateDigitalClock();
+    </script>
+
+</body>
+</html>
